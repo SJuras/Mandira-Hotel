@@ -1,3 +1,8 @@
+@font-face {
+   font-family: 'Bismillah' ;
+   src: url('../fonts/Bismillahscript-4ByyY.ttf') format('truetype');
+}
+
 
 * {
   margin: 0;
@@ -33,18 +38,22 @@ img {
 
 /* header */
 header {
-  height: 8vh;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  transition: 0.4s;
+  padding: 16px 0px;
+}
+
+header.sticky {
+  background-color: #242e5a;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
 }
 
 .hambuger {
@@ -113,7 +122,8 @@ header ul li a:hover {
 }
 
 .home h1 {
-  font-size: 80px;
+  font-family: 'Bismillah', sans-serif;
+  font-size: 120px;
   letter-spacing: 12px;
 }
 
@@ -180,6 +190,67 @@ button:hover {
   opacity: 0.1;
 }
 /* hero section END */
+
+/* booking */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.book {
+  margin-top: 5%;
+  width: 100%;
+  height: 20vh;
+  color: #fff;
+}
+
+.book .input {
+  background: #242e5a;
+  padding: 20px 20px 40px 20px;
+}
+
+.book .search {
+  background: #3f9cc1;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.book .search:hover {
+  background: #C1B086;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  background: #263760;
+  margin-top: 20px;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.book .search {
+  width: 20%;
+}
+
+.book .search input {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+/* booking END */
 
 
 /* media queries */
@@ -254,7 +325,7 @@ button:hover {
   }
 
   .home h1 {
-    font-size: 50px;
+    font-size: 80px;
     letter-spacing: 12px;
   }
 }

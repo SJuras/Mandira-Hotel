@@ -28,3 +28,10 @@ function change(change) {
   line.style.background = change;
 }
 // END
+
+// adds class sticky to header when scrolling down.
+window.addEventListener('scroll', function(){
+  var header = document.querySelector("header");
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+// END 
