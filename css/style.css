@@ -645,6 +645,27 @@ input {
   color: #fff;
 }
 
+.contact-logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-logo-img {
+  width: 120px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.contact-logo h2 {
+  color: #fff;
+  font-family: 'Bismillah', sans-serif;
+  font-size: 120px;
+  letter-spacing: 12px;
+}
+
 .contact-form-container textarea {
   height: 160px;
   width: 100%;
@@ -665,7 +686,47 @@ input {
   height: 480px;
   position: relative;
 }
+
+.contact-form-container input[type='submit'] {
+  cursor: pointer;
+}
 /* contact END */
+
+/* footer */
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer li a {
+  color: #000;
+  transition: 0.4s;
+}
+
+footer li {
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+footer li:hover a {
+  color: #C1B086;
+  cursor: pointer;
+}
+
+.certificate-box {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.padding-down {
+  padding-bottom: 30px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+/* footer END */
 
 /* media queries */
 @media only screen and (max-width:1200px){
