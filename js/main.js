@@ -34,4 +34,44 @@ window.addEventListener('scroll', function(){
   var header = document.querySelector("header");
   header.classList.toggle('sticky', window.scrollY > 0);
 });
-// END 
+// END
+
+// Restaurant open and close sections
+var accItem = document.getElementsByClassName('accordionItem');
+var accHD = document.getElementsByClassName('accordionIHeading');
+
+for (i = 0; i < accHD.length; i++) {
+  accHD[i].addEventListener('click', toggleItem, false);
+}
+
+function toggleItem() {
+  var itemClass = this.parentNode.className;
+  for (var i = 0; i < accItem.length; i++) {
+    accItem[i].className = 'accordionItem close';
+  }
+  if (itemClass == 'accordionItem close') {
+    this.parentNode.className = 'accordionItem open';
+  }
+}
+// END
+
+// gallery carousel
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    1000: {
+      items: 4
+    }
+  }
+})
+// END
