@@ -687,8 +687,28 @@ input {
   position: relative;
 }
 
+.input-container-2 {
+  width: 100%;
+  text-align: center;
+}
+
 .contact-form-container input[type='submit'] {
+  padding: 20px 40px;
+  background: #C1B086;
+  outline: none;
+  border: 2px solid #C1B086;
+  border-radius: 50px;
+  color: #fff;
+  margin-top: 20px;
   cursor: pointer;
+  transition: 0.4s;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.contact-form-container input[type='submit']:hover {
+  border: 2px solid #fff;
+  background: none;
 }
 /* contact END */
 
@@ -729,6 +749,17 @@ footer li:hover a {
 /* footer END */
 
 /* media queries */
+@media only screen and (max-width:1300px){
+
+  .contact-logo h2 {
+    font-size: 80px;
+  }
+
+  .contact-logo-img {
+    width: 80px;
+  }
+}
+
 @media only screen and (max-width:1200px){
 
   .home .text {
@@ -739,6 +770,12 @@ footer li:hover a {
 
   .home .image_item {
     right: 10%;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .wrapper .text {
+    padding-top: 50px;
   }
 }
 
@@ -804,8 +841,194 @@ footer li:hover a {
     letter-spacing: 12px;
   }
 
+  .wrapper .text {
+    width: 80%;
+  }
+
   .gallery-box {
     width: 300px;
     height: 300px;
+  }
+
+  .contact-logo h2 {
+    font-size: 60px;
+  }
+
+  .contact-logo-img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width:776px){
+  .contact-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .home .box .text {
+    max-width: 100%;
+    margin-top: 20%;
+  }
+
+  .home .box .text::after,
+  .home .image_item {
+    display: none;
+  }
+
+  .restaurant .container,
+  .about .container,
+  .book .container {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .book {
+    margin-top: 10%;
+    height: auto;
+  }
+
+  .book .search {
+    width: 100%;
+  }
+
+  .book .search input {
+    margin-top: 0;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .wrapper .text {
+    width: 80%;
+  }
+
+  .room {
+    margin-bottom: 100px;
+  }
+
+  .room .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .restaurant .right {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  footer .payment {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home .text {
+    margin: 10% 0 0 0;
+  }
+
+  .home h1 {
+    font-size: 60px;
+  }
+
+  .about p {
+    margin: 50px 0 0 0;
+  }
+
+  .home p {
+    margin: 20px 0 0 0;
+  }
+
+  .wrapper .text {
+    padding: 24px;
+    height: 600px;
+  }
+
+  .padding-up {
+    padding-top: 50px;
+  }
+
+  .heading_top {
+    margin-top: 30px;
+  }
+
+  .heading_top {
+    margin-top: 100px;
+  }
+
+  .heading_top button {
+    display: none;
+  }
+
+  .restaurant .flex {
+    flex-direction: column-reverse;
+  }
+
+  .contact-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home h2 {
+    font-size: 30px;
+  }
+
+  .home .box .text {
+    max-width: 80%;
+    padding-left: 30px;
+    margin-top: 30%;
+  }
+
+  .about .heading {
+    padding-bottom: 30px;
+  }
+
+  .wrapper2 .box {
+    flex-direction: column;
+  }
+
+  .wrapper2 .guest-profile {
+    margin-bottom: 12px;
+  }
+
+  .wrapper .text {
+    height: 650px;
+  }
+
+  .contact .heading {
+    margin-bottom: 100px;
+  }
+
+  .contact-text {
+    width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width:370px){
+  .about .image1 {
+    width: 280px;
+  }
+
+  .wrapper .text {
+    width: 100%;
+    right: 0;
   }
 }
